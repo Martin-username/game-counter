@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <script defer src="game-counter.js"></script>
+    <title>game-counter-app</title>
+    <link rel="stylesheet" href="game-counter.css">
+  </head>
+  <body>
+    <div class="container">
+     <div class="child-home">
+       
+       <h3>HOME</h3>
+       
+        <p class="num-elh" id="num-elh">0</p>
+          <button id="btn-one" onclick="increaseOne()">+1</button>
+            <button id="btn-two" onclick="increaseTwo()">+2</button>
+          <button id="btn-three" onclick="increaseThree()">+3</button>
+       </div>
+       
+        <div class="child-timer">
+          
+          <h3>TIMER</h3>
+          
+            <div class="clock">
+              <p class="gm-tmr" id="countdown">00:00</p>
+           <button id="count-rst" onclick="rstCount()">Reset Game Count</button>
+        <button id="timer-str" onclick="gameStr()">Start Timer</button><br>
+      <button id="timer-ps" onclick="timerPs()">Pause Timer</button><br>
+       <button id="timer-rst" onclick="timerRst()">Reset Timer</button>
+        <div class="date-inf" id="time"></div>
+        </div>
+         </div>
+         
+         
+           <div class="child-guest">
+             
+          <h3>GUEST</h3>
+          
+            <p class="num-elg" id="num-elg">0</p>
+              <button id="btn-qst-one" onclick="gstOne()">+1</button>
+                <button id="btn-gst-two" onclick="gstTwo()">+2</button>
+                  <button id="btn-gst-three" onclick="gstThree()">+3</button>
+          </div>
+           </div>
+            </body>
+             </html>
